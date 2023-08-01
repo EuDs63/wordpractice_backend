@@ -1,0 +1,12 @@
+# application.yml
+
+spring:
+  application:
+    name: ${APP_NAME:unnamed}
+  datasource:
+    url: jdbc:hsqldb:file:testdb #创建名为testdb的数据库文件
+    username: bebop
+    password:
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+server:
+  port: 8080
